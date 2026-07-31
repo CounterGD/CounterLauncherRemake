@@ -9,18 +9,31 @@ APPDIR := AppDir
 DIST := dist
 BUILD := build
 
-.PHONY: all clean appdir appimage
+APPIMAGETOOL := appimagetool
+APPIMAGETOOL_URL := https://github.com/AppImage/appimagetool/releases/latest/download/appimagetool-x86_64.AppImage
+
+.PHONY: all clean deps build appdir appimage
 
 all: appimage
 
 clean:
-	rm -rf $(BUILD) $(DIST) $(APPDIR) *.spec *.AppImage
+	rm -rf $(BUILD) $(DIST) $(APPDIR) *.AppImage *.spec
+
+deps:
+	@if [ ! -f "$(APPIMAGETOOL)" ]; then \
+		echo "[*] Downloading appimagetool..."; \
+		wget -O $(APPIMAGETOOL) $(APPIMAGETOOL_URL); \
+		chmod +x $(APPIMAGETOOL); \
+	else \
+		echo "[+] appimagetool already exists."; \
+	fi
 
 build:
 	$(PYINSTALLER) --onefile --name $(APP) $(ENTRY)
 
 appdir: build
 	mkdir -p $(APPDIR)/usr/bin
+
 	cp $(DIST)/$(APP) $(APPDIR)/usr/bin/$(APP)
 	cp $(ICON) $(APPDIR)/$(APP).png
 
@@ -36,5 +49,5 @@ Icon=$(APP)\n\
 Terminal=true\n\
 Categories=Game;\n' > $(APPDIR)/$(APP).desktop
 
-appimage: appdir
-	./appimagetool $(APPDIR)
+appimage: deps appdir
+	./$(APPIMAGETOOL) $(APPDIR)
