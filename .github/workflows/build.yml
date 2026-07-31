@@ -64,6 +64,10 @@ jobs:
           Categories=Game;
           EOF
 
+      - name: Copy application icon
+        run: |
+          cp channels4_profile_256.png AppDir/CounterLauncher.png
+
       - name: Download appimagetool
         run: |
           wget -O appimagetool \
