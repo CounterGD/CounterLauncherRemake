@@ -157,9 +157,9 @@ Minecraft is a trademark of Microsoft Corporation.
 
 Please read:
 
-- LICENSE
-- EULA.md
-- PRIVACY.md
+- [LICENSE](LICENSE)
+- [EULA](EULA.md)
+- [Privacy Policy](PRIVACY.md)
 
 ---
 
