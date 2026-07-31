@@ -3,6 +3,12 @@ import os
 import urllib.request
 from java import MinecraftJavaDownloader
 from libs import *
+from launch import MinecraftLauncher
+
+launcher = MinecraftLauncher(
+    minecraft_dir,
+    version
+)
 
 VERSION_MANIFEST = "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json"
 
@@ -85,3 +91,6 @@ for name, asset in objects.items():
 print("\nDone!")
 print(f"Downloaded: {downloaded}")
 print(f"Skipped: {skipped}")
+
+print(f"Now launching Minecraft...")
+launcher.launch()
