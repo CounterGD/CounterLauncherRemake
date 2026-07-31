@@ -42,21 +42,21 @@ CounterLauncher
 
 Clone the repository:
 
-git clone https://github.com/CounterGD/CounterLauncherRemake.git
-cd CounterLauncherRemake
+```git clone https://github.com/CounterGD/CounterLauncherRemake.git
+cd CounterLauncherRemake```
 
 Create a virtual environment:
 
-python3 -m venv venv
-source venv/bin/activate
+```python3 -m venv venv
+source venv/bin/activate```
 
 Install dependencies:
 
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 Run CounterLauncher:
 
-python minecraft_dl.py
+```python minecraft_dl.py```
 
 ---
 
@@ -64,11 +64,11 @@ python minecraft_dl.py
 
 Using PyInstaller:
 
-pyinstaller --onefile --name CounterLauncher minecraft_dl.py
+```pyinstaller --onefile --name CounterLauncher minecraft_dl.py```
 
 Or simply:
 
-make
+```make```
 
 The Makefile will build the executable and package it into an AppImage.
 
@@ -76,7 +76,7 @@ The Makefile will build the executable and package it into an AppImage.
 
 📁 Project Structure
 
-CounterLauncherRemake/
+```CounterLauncherRemake/
 ├── .github/
 │   └── workflows/
 ├── AppDir/
@@ -89,7 +89,7 @@ CounterLauncherRemake/
 ├── LICENSE
 ├── EULA.md
 ├── PRIVACY.md
-└── README.md
+└── README.md```
 
 ---
 
