@@ -1,0 +1,144 @@
+CounterLauncher
+
+<p align="center">
+  <img src="channels4_profile_256.png" alt="CounterLauncher Logo" width="128">
+</p><p align="center">
+  <b>A lightweight, modern Minecraft Java Edition launcher written in Python.</b>
+</p><p align="center">
+  <a href="https://github.com/CounterGD/CounterLauncherRemake/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/CounterGD/CounterLauncherRemake/build.yml?branch=main&label=Build&logo=github" alt="Build Status">
+  </a>
+  <a href="https://github.com/CounterGD/CounterLauncherRemake/releases">
+    <img src="https://img.shields.io/github/v/release/CounterGD/CounterLauncherRemake?logo=github" alt="Latest Release">
+  </a>
+  <a href="https://github.com/CounterGD/CounterLauncherRemake/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/CounterGD/CounterLauncherRemake" alt="License">
+  </a>
+  <img src="https://img.shields.io/badge/Python-3.13+-3776AB?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Linux-Supported-FCC624?logo=linux&logoColor=black" alt="Linux">
+  <img src="https://img.shields.io/badge/Status-Active%20Development-orange" alt="Development Status">
+</p>---
+
+✨ Features
+
+- 🎮 Launch Minecraft Java Edition
+- 📥 Download official Minecraft versions
+- 📚 Automatic library downloader
+- 🖼️ Automatic asset downloader
+- 🧩 Native library installer
+- ☕ Automatic Java runtime installation
+- 📦 Portable Linux AppImage builds
+- 🐍 Written entirely in Python
+
+---
+
+📸 Screenshots
+
+«Screenshots coming soon.»
+
+---
+
+🚀 Installation
+
+Clone the repository:
+
+git clone https://github.com/CounterGD/CounterLauncherRemake.git
+cd CounterLauncherRemake
+
+Create a virtual environment:
+
+python3 -m venv venv
+source venv/bin/activate
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Run CounterLauncher:
+
+python minecraft_dl.py
+
+---
+
+🔨 Building
+
+Using PyInstaller:
+
+pyinstaller --onefile --name CounterLauncher minecraft_dl.py
+
+Or simply:
+
+make
+
+The Makefile will build the executable and package it into an AppImage.
+
+---
+
+📁 Project Structure
+
+CounterLauncherRemake/
+├── .github/
+│   └── workflows/
+├── AppDir/
+├── build/
+├── dist/
+├── java.py
+├── libs.py
+├── minecraft_dl.py
+├── Makefile
+├── LICENSE
+├── EULA.md
+├── PRIVACY.md
+└── README.md
+
+---
+
+🛣️ Roadmap
+
+- [x] Minecraft version downloader
+- [x] Library downloader
+- [x] Asset downloader
+- [x] Native downloader
+- [x] Java runtime installer
+- [x] Linux AppImage packaging
+- [ ] Launcher GUI
+- [ ] Microsoft account authentication
+- [ ] Offline mode
+- [ ] Fabric support
+- [ ] Forge support
+- [ ] NeoForge support
+- [ ] Automatic launcher updates
+- [ ] Windows support
+- [ ] macOS support
+
+---
+
+🤝 Contributing
+
+Contributions are welcome!
+
+If you have a suggestion, bug report, or feature request, please open an Issue or submit a Pull Request.
+
+---
+
+📜 Legal
+
+CounterLauncher is an independent project.
+
+It is not affiliated with, endorsed by, sponsored by, or approved by Mojang Studios or Microsoft.
+
+Minecraft is a trademark of Microsoft Corporation.
+
+Please read:
+
+- LICENSE
+- EULA.md
+- PRIVACY.md
+
+---
+
+📄 License
+
+Copyright © 2026 CounterGD.
+
+See the LICENSE file for additional information.
