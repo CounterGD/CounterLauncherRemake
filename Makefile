@@ -9,6 +9,7 @@ APPDIR := AppDir
 DIST := dist
 BUILD := build
 
+BOX64 := box64
 APPIMAGETOOL := appimagetool
 APPIMAGETOOL_URL := https://github.com/AppImage/appimagetool/releases/latest/download/appimagetool-x86_64.AppImage
 
@@ -50,4 +51,4 @@ Terminal=true\n\
 Categories=Game;\n' > $(APPDIR)/$(APP).desktop
 
 appimage: deps appdir
-	./$(APPIMAGETOOL) $(APPDIR)
+	$(BOX64) ./$(APPIMAGETOOL) $(APPDIR)

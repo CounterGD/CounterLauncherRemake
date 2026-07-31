@@ -1,8 +1,15 @@
 [Desktop Entry]
+\
 Type=Application
+\
 Name=CounterLauncher
+\
 Comment=Minecraft Launcher
+\
 Exec=CounterLauncher
+\
 Icon=CounterLauncher
-Categories=Game;
+\
 Terminal=true
+\
+Categories=Game;
