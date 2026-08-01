@@ -171,6 +171,8 @@ See the LICENSE file for more information.
 
 ---
 
+update: [![build result](https://build.opensuse.org/projects/home:Counter6/packages/CounterLauncher/badge.svg?type=default)](https://build.opensuse.org/package/show/home:Counter6/CounterLauncher)
+
 <p align="center">
   Made with ❤️ by <b>CounterGD</b>
 </p>
